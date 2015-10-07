@@ -24,36 +24,36 @@ Pre-requisites include
 The pullgomezapibulk.sh and gomezconversion-object.sh script are assumed to be installed in /usr/box280 - but these locations can easily be changed
 
 The following files exist in this repository
-/usr/box280/bin/pullgomezapibulk.sh
-/usr/box280/bin/gomezconversion-object.sh
-/usr/box280/bin/convertobject.sh
-/usr/box280/etc/closedatafeed.xml
-/usr/box280/etc/getresponsedata.xml
-/usr/box280/etc/opendatafeed.xml
-/opt/splunkforwarder/etc/apps/gomez/default/inputs.conf
+- /usr/box280/bin/pullgomezapibulk.sh
+- /usr/box280/bin/gomezconversion-object.sh
+- /usr/box280/bin/convertobject.sh
+- /usr/box280/etc/closedatafeed.xml
+- /usr/box280/etc/getresponsedata.xml
+- /usr/box280/etc/opendatafeed.xml
+- /opt/splunkforwarder/etc/apps/gomez/default/inputs.conf
 
 
 The following directories are assumed to be created
-SOURCEXML=/usr/box280/etc                             * where the xml files/template for the SOAP call to Gomez reside
-TMPXML=/usr/box280/tmp                                * where the temporary edited xml files for SOAP calls to Gomez sit
-SCRIPTLOG=/var/log/box280/pullgomezdatafromapi.log    * where the log files from the script are kept
-RESPONSEDIR=/home/gomez/source-api                    * where the gomez source data is stored when pulled from the API
-/tmp                                                  * where some files are occassionally written to
-OUTPUTDIR=/home/gomez/splunk-api                      * where the splunk friendly step summary files are written to
-OBJECTLOGDIR=/home/gomez/splunk-api/object            * where splunk friendly object detail logs are stored
+- SOURCEXML=/usr/box280/etc                             * where the xml files/template for the SOAP call to Gomez reside
+- TMPXML=/usr/box280/tmp                                * where the temporary edited xml files for SOAP calls to Gomez sit
+- SCRIPTLOG=/var/log/box280/pullgomezdatafromapi.log    * where the log files from the script are kept
+- RESPONSEDIR=/home/gomez/source-api                    * where the gomez source data is stored when pulled from the API
+- /tmp                                                  * where some files are occassionally written to
+- OUTPUTDIR=/home/gomez/splunk-api                      * where the splunk friendly step summary files are written to
+- OBJECTLOGDIR=/home/gomez/splunk-api/object            * where splunk friendly object detail logs are stored
 
 
 ##  Execute the script
 
 You only ever need to invoke one of the scripts. For help invoke the command below:
-/usr/box280/bin/pullgomezapibulk.sh -h 
+- /usr/box280/bin/pullgomezapibulk.sh -h 
 
 An example script execution - to get 10 minutes of data ending at 1:20AM UTC the 9th of July 2015 
-/usr/box280/bin/pullgomezapibulk.sh -e "2015-07-09 01:20:00" -d 10
+- /usr/box280/bin/pullgomezapibulk.sh -e "2015-07-09 01:20:00" -d 10
 
 The script - /usr/box280/bin/pullgomezapibulk.sh
-calls /usr/box280/bin/gomezconversion-object.sh
-which then calls /usr/box280/binconvertobject.sh
+- calls /usr/box280/bin/gomezconversion-object.sh
+- which then calls /usr/box280/binconvertobject.sh
 
 ## Splunk Config
 A sample splunk input.conf file is available for your reading pleasure :)
