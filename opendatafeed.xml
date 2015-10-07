@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://gomeznetworks.com/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:OpenDataFeed2>
+         <!--Optional:-->
+         <web:sUsername>YOUR_USERNAME_HERE</web:sUsername>
+         <!--Optional:-->
+         <web:sPassword>YOUR_PASSWORD_HERE</web:sPassword>
+         <!--Optional:-->
+         <web:iMonitorIdSet>
+            <!--Zero or more repetitions:-->
+            <web:int>YOUR_MONITOR_ID_HERE</web:int>
+         </web:iMonitorIdSet>
+         <!--Optional:-->
+         <!--Optional:-->
+         <web:sMonitorClassDesignator>MOBILE</web:sMonitorClassDesignator>
+         <!--Optional:-->
+         <web:sDataDesignator>ALL</web:sDataDesignator>
+         <!--Optional:-->
+         <!--Optional:-->
+         <web:sStartTime>2015-08-02 12:00:00</web:sStartTime>
+         <!--Optional:-->
+         <web:sEndTime>2015-08-02 12:14:59</web:sEndTime>
+         <!--Optional:-->
+         <web:sOrderDesignator>TIME</web:sOrderDesignator>
+      </web:OpenDataFeed2>
+   </soapenv:Body>
+</soapenv:Envelope>
