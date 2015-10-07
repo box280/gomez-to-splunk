@@ -1,13 +1,15 @@
-## gomez-to-splunk
+# gomez-to-splunk
 Make API Calls to Gomez and convert this into something Splunk friendly.
 Written in Bash because thats the scripting language I'm best at...
 
+
 G'day. These scripts are designed for customers of Dynatrace/Gomez Synthetic Monitoring or End User management products. I'm unsure of what the real name of the product is as the company has changed names and products often recently - they may even be renamed keynote in the future. Anyway - we tend to call this software "Gomez" as it's a cooler name...
 
+
 At a high level the scripts/configs undertake actions below
-(1) make a call to the dynatrace API http://gpn.webservice.gomez.com. Download a chunk of data locally
+(1) make a call to the dynatrace API http://gpn.webservice.gomez.com. Download a chunk of XML formatted data locally
 (2) process the downloaded data into a (a) summary of the Gomez tests (b) a detail of the objects that were tested
-(3) the processed data is in a splunk friendly location and a splunk friendly format ready for ingestion.
+(3) the processed data is in a splunk friendly location and a splunk (Key Value) friendly format ready for ingestion.
 
 
 ## INSTALL?
