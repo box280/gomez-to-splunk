@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://gomeznetworks.com/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:CloseDataFeed>
+        <web:sSessionToken>2adbd262-ab22-47c8-99b6-897192b3d70f</web:sSessionToken>
+      </web:CloseDataFeed>
+   </soapenv:Body>
+</soapenv:Envelope>
