@@ -1,0 +1,8 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://gomeznetworks.com/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetResponseData>
+          <web:sSessionToken>4852aa7d-461d-4624-bb40-71c03c26ca61</web:sSessionToken>
+      </web:GetResponseData>web:GetResponseData>
+   </soap:Body>
+</soap:Envelope>
